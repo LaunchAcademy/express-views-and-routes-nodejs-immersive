@@ -8,10 +8,11 @@
 
 
 <ul>
-
   {{#each tasks }}
   <li>
-    {{ this }}
+    {{ this.name }}
+    <p>Due: {{ this.dueDate }}</p>
+    <p>Status: {{ this.completedStatus }}</p>
   </li>
   {{/each }}
 
