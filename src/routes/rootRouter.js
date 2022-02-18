@@ -5,9 +5,8 @@ import tasksRouter from "./tasksRouter.js"
 
 rootRouter.use("/tasks", tasksRouter)
 
-rootRouter.get('/', (req, res) => {
+rootRouter.get("/", (req, res) => {
   res.send("the true root route")
 })
-
 
 export default rootRouter
